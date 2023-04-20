@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <title>Teste</title>
+</head>
+<!--Quando vc usa o onmouseup, quer dizer q quando clicar na tela, ele será acionado no caso será um alerta-->
+<!--Esse evento onload é ativado quando a página é carregada, e o onresize é ativado quando o tamanho da tela é alterado-->
+
+<body onresize="console.log('Tamanho mudado')" onload="alert('carregou!')"> <!-- onmouseup="alert('apareci')"-->
+    <h1>Testando os eventos</h1>
+    <!--Esses são eventos do javascript, o onclick é quando alguem clicar no botão, ele vai acionar uma função, o onedbl é a mesma coisa, mas no caso vai ser quando alguem clicar 2x rapido-->
+    <button ondblclick="x2()" onclick="clique()">Oneclick e Ondblclick</button>
+    <button style="margin-bottom: 50px;">Onedblclick</button>
+    <!--O onmousemove será acionado enquanto o mouse estiver se mexendo, o onmouseout será ativado quando o mouse sair de cima do bloco e o onmouseover será acionado quando ele estiver encima do bloco-->
+    <div id="cor" onmousemove="quandoMexer()" onmouseout="mousefora()" onmouseover="mouse()"
+        style=" margin: auto auto; background-color: aquamarine; width: 60%; height: 300px;">
+
+    </div>
+    <p id="teste"></p>
+
+    <!--O onblur, é quando o input perde o foco, quando isso acontecer ele vai acionar algo, no caso a função clique-->
+    <!--O onkeydow acionada algo quando uma tecla é pressionada-->
+    <!--O onfocus aciona algo quando o campo input esta sendo focado-->
+    <input type="text" onkeydown="tecla()" onblur="clique()" id="texto2" onfocus="texto1()"
+        style="width: 50%; font-size: 20px;" value="eu vou ser apagado">
+    <!--O onekeypress aciona algo quando uam tecla é pressiona e soltada-->
+    <input onkeypress="press()" onblur="clique()" id="texto3" type="text" onfocus="texto1()"
+        style="width: 50%; font-size: 20px; margin-top: 50px;">
+
+
+
+    <!--Com o onchange, toda vez q o bloco for alterado, algo vai ser acionado, no caso quando o campo input for alterado, aparecerá no console a palavra "mudando"-->
+    <select onchange="console.log('mudando')" name="ola" id="change">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <!--O onkeyup é acionado quando o usuario segura uma tecla pressionando ela e depois quando ele solta, é acionado o evento  -->
+    <input onkeyup="up()" id="texto4" style="width: 50%; font-size: 20px; margin-top: 50px;" type="text">
+
+    <script src="js/objetoEEventos.js"></script>
+</body>
+
+</html>
