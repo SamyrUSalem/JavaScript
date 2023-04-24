@@ -42,7 +42,7 @@ function verificarCor() {
 
         case "rosa":
             document.body.style.backgroundColor = "pink";
-            break;
+            break
 
         case "marrom":
             document.body.style.backgroundColor = "brown";
@@ -53,4 +53,14 @@ function verificarCor() {
             document.getElementById('algo').style.color = "blue"
     }
 
+}
+
+
+//essa função coleta o ano q estamos atualmente
+var anoAtual = new Date().getFullYear();
+
+//Dessa maneira os maiores valores vão estar encima
+for (let i = anoAtual; i >= 1900; i--) {
+    // O "+=" é para ele printar ou coletar tanto o valor q ja estava, como o valor q vai entrar
+    document.getElementById('repetir').innerHTML += "<option value = '" + i + "'> " + i + "</option>";
 }
