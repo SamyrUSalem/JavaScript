@@ -19,8 +19,15 @@ function ativandoInter() {
         //dessa maneira, essa varialvel esta coletando oq esta escrito no item, com esse id
         var calculando = document.getElementById('teste2').innerHTML;
         //A propriedade parseInt, converte texto em numero
-        var somando = parseInt(calculando) + 1;
-        document.getElementById('teste2').innerHTML = somando;
+        var somando = parseInt(calculando) - 1;
+        //Se o numero for menor q um, sera exibido essa mensagem e contador vai parar de contar, com o intuito de evitar os nuemros negativos
+        if (somando < 1) {
+            document.getElementById('teste2').innerHTML = "Acabou";
+            parandoInter();
+            //Se ele n for menor q 1, ele continuara mostrando os valores q esta na variavel
+        } else {
+            document.getElementById('teste2').innerHTML = somando;
+        }
     }, 1000);
 }
 
