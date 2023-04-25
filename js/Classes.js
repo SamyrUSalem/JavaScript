@@ -21,3 +21,22 @@ console.log(pc.som());
 
 const pc2 = new Gamer("I7 7700KF", "6gb", "Da pro gasto");
 console.log(pc2.som());
+
+
+//Mexendo com Datas
+
+//Essa propriedade busca o dia, mes, hora e etc.. do dia de hoje
+let data = new Date();
+console.log(data);
+
+//Essa propriedade busca só o ano
+let ano = data.getFullYear();
+console.log(ano);
+
+//Essa propriedade busca o mês, mas é mostrado igual uma matriz, começa do 0 e vai até 11, no caso o 0 é janeiro e vai ate o 11 q é dezembro
+let mes = data.getMonth();
+
+const mesEscrito = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+//Com uma matriz criada, possuindos o nome de todos os meses, é possivel criar uma variavel e usar essa matriz como indice para a função getmonth, dessa maneira quando for 0, vai ser janeiro e etc...
+let mostrando = mesEscrito[data.getMonth()];
+console.log(mostrando);
