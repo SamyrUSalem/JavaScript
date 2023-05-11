@@ -4,7 +4,7 @@ const matrizando = ["zero", "um", "dois", "tres"];
 /*console.log(matrizando[1]);*/
 
 //Essa propriedade length, mostra o total de itens dentro da matriz
-/*alert(matrizando.length);*/
+alert(matrizando.length);
 
 //Usando o nomedamatriz.push, ele adicionar um dado dentro da matriz, daria para colocar um dentro de uma posição especifica, como: matrizando[5] = 'algo';
 matrizando.push("abacate");
