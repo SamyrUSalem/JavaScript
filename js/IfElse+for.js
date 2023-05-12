@@ -1,6 +1,7 @@
 function verificar() {
     let text = document.getElementById('teste').value;
 
+    //Entre o if e o else, é possível usar o else if , ele será executado antes do else e dpois o if, caso queria inserir mais alguma condição e pode ficar acrescentando else if,s e desejar
     if (text == "" || text == null) {
         let p = document.getElementById('colocar');
         p.innerHTML = "Coloca algo aí";

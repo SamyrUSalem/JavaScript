@@ -3,11 +3,8 @@ let sobrenome = prompt("Qual é o seu sobrenome? ");
 let campo = prompt("Qual é o seu campo de estudo? ");
 let ano = prompt("Qual é o seu ano de nascimento? ");
 
-let id = parseFloat(ano);
-
-id = 2023 - id;
-
-console.log("Ola " + nome + ' ' + sobrenome + ", entendo o seu campo é " + campo + " e a sua idade é " + id);
+//Usando o \n ele irá pular a linha
+console.log("Ola " + nome + ' ' + sobrenome + ", entendo o seu campo é " + campo + " e a sua idade é " + (2023 - ano));
 
 
 let n1 = prompt("Fale um número");

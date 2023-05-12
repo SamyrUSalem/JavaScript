@@ -26,7 +26,7 @@ bol2 = 2;
 var ter, ter2;
 
 ter = 21;
-//Essa é a operação condicional ternária, é meio q colocar uma condição na hora de declarar a variavel,  vc coloca entre parenteses a condição e depois fora do paratenses uma interrogação, ai colocar oq deve acontecer caso seja verdadeiro e depois ao lado coloca os dois pontos e fale oq deve acontecer caso seja falso
+//Essa é a operação condicional ternária, é meio q colocar uma condição na hora de declarar a variavel,  vc coloca entre parenteses a condição e depois fora do paratenses uma interrogação(é tipo o if), ai colocar oq deve acontecer caso seja verdadeiro e depois ao lado coloca os dois pontos(é tipo o else) e fale oq deve acontecer caso seja falso
 ter2 = (ter > 20) ? "Esse é o campo caso seja verdadeiro" : "Exato, esse é o campo caso seja negativo"
 
 /*alert("Vamo testar a resposta: " + ter2);*/
