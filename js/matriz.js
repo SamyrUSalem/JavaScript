@@ -1,3 +1,5 @@
+//Quando a gente cria dois array e coloca valor em um: array = [1,2,3,4,] e depois a gente coloca esses mesmos valores no outro, como: array2 = array, eu n estou criando meio q uma cópia do valor no array 2, igual comom é feito quando a gente cria uma váriavel númerica por exemplo, nesse caso eu estou referenciando o valor no array no array2, então se eu mudar o valor no array2 também vai mudar no array
+
 //Isso é uma matriz, é só declaraar ela como const, para o valor n mudar e deixar entre colchete oq é preciso ficar dentro dela
 const matrizando = ["zero", "um", "dois", "tres"];
 

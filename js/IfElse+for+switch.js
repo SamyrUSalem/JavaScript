@@ -65,3 +65,8 @@ for (let i = anoAtual; i >= 1900; i--) {
     // O "+=" é para ele printar ou coletar tanto o valor q ja estava, como o valor q vai entrar
     document.getElementById('repetir').innerHTML += "<option value = '" + i + "'> " + i + "</option>";
 }
+
+//Primeiro eu faço uma inicialização q seria a criaçãod a variável, depois coloco a condição q no caso vai determinar a quantidade de vezes q ela vais e repetir e depois coloco a finalização q vai ser executado só no fim do código q seria incrementar o i
+for (let i = 0; i <= 10; i++) {
+    alert(i)
+}
