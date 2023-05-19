@@ -1,4 +1,4 @@
-//Isso é um objeto, é recomendado declarar ele como const, para o valor n mudar,abrindo a chaves e colocando por exemplo, marca:"algo", vai armazenar essas informações no objeto, ai é só ir inserindo, é possícel criar funções como o exemplo abaixo
+//Isso é um objeto, é recomendado declarar ele como const, para o valor n mudar,abrindo a chaves e colocando por exemplo, marca:"algo", vai armazenar essas informações no objeto, ai é só ir inserindo, é possícel criar funções como o exemplo abaixo, colocar arrays dentro do objeto, inserir mais um objeto e etc...
 const carro = {
     marca: "Renault", placa: "CFG-3212", cor: "verde", ano: 2020,
     ligar: function () {
@@ -9,6 +9,10 @@ const carro = {
         return "Oq eu vou dizer é q a placa é " + this.placa + ", não acabou pq a cor dele é " + this.cor; s
     }
 }
+
+//Dessa maneira, estou criando mais uma propriedade dentro do objeto carro
+carro.novo = "Não é usado"
+
 //Dessa maneira é possível ver no console os atributos do objeto, mas usando o objeto.algumaPropriedade, irá só mostrar a propriedade especifica
 console.log(carro.texto());
 //Dessa maneira eu estou acionando o método(função)
