@@ -4,7 +4,8 @@ const carro = {
     ligar: function () {
         alert("vrumvrumvrumvrum")
     },
-    texto: function () {
+    //Dessa maneira estou criando um método, seria uma função dentro do objeto mas eu n declaro com o nome function, apenas o nome direto
+    somCarro() {
         //O this, ele puxa um atributo dentro do objeto no caso ele esta puxando oa atributo placa
         return "Oq eu vou dizer é q a placa é " + this.placa + ", não acabou pq a cor dele é " + this.cor; s
     }
