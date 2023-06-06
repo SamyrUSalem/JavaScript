@@ -9,7 +9,6 @@ alert("Resultado: " + strnumber);
 
 
 const word = prompt("Qual seria a palavra? ");
-let indicie = 0;
 let reverse = "";
 
 for (let ii = word.length - 1; ii >= 0; ii--) {

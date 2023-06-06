@@ -74,6 +74,11 @@ const maiorQ10 = numero.filter(filtrando);
 //Dessa maneira os nuemros ficam do menor para o maior, caso queira do maior para o menor é sõ colocar b- a
 numero.sort(function (a, b) { return a - b });
 
+//O sort ele modifica a matriz principal q no caso é o array numero, mas caso n queira q modifique ela, é só criar uma outra matriz como abaixo e usar o slice antes, q ele fara uma cópia e ela q será alterada
+const number = numero.slice().sort(function (a, b) {
+    return a - b;
+})
+
 //Com essa propriedade slice, é possivel pegar valor de um certo ponto da matriz e acrescentar em outra, nesse caso eu crio uma matriz, depois coloco para ela receber a matriz q vou colher os dados.slice e nos parenteses é necessário por a partir de qual ponto eu vou querer pegar, nesse caso eu vou pegar da primeria possição em diante, caso eu queira parar de colher antes do final da matriz é só colocar virgula e colcoar uma posição a mais do q vc deseja parar, no caso eu coloquei o 4, mas só vai pegar até o 3, eu falo mais sobre essa função no matriz2.js
 const jogadores = basquete.slice(1, 4);
 
