@@ -13,7 +13,7 @@ class Gamer {
         return this.processador + " BRILHANDOODODOODO";
     }
 }
-
+2
 //Aqui é a criação de um objeto, é só colocar o new e o nome da classe, depois entre parênteses o conteúdo dos parâmetros
 const pc = new Gamer("I9 9900K", "8gb", "Show");
 //Dessa maneir eu estou chamando o método
